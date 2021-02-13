@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 6) do
   end
 
   create_table "characters", force: :cascade do |t|
+    t.string "name"
     t.string "actor_id"
     t.string "show_id"
     t.string "catchphrase"
